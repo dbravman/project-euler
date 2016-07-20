@@ -1,5 +1,3 @@
-require "prime"
-
 class Puzzle10
   def initialize(max)
     @max = max
@@ -16,7 +14,6 @@ class Puzzle10
       end
       possible_prime += 2
     end
-    @primes.pop
   end
 
   def primeCheck(n)
