@@ -8,13 +8,21 @@ class Puzzle7
     @primes = [2]
     possible_prime = 3
     until @primes.length == n
-      # p possible_prime
-      # p @primes
-      if @primes.map { |prime| possible_prime % prime != 0}.reduce(:&)
+      # if @primes.map { |prime| possible_prime % prime != 0}.reduce(:&)
+      if primeCheck(possible_prime)
         @primes << possible_prime
       end
       possible_prime += 2
     end
+  end
+
+  def primeCheck(n)
+    @primes.each do |prime|
+      if n % prime == 0
+        return false
+      end
+    end
+    true
   end
 end
 
