@@ -1,7 +1,7 @@
 class Puzzle1
   def initialize(upperLimit)
     @upperLimit = upperLimit
-    calculate
+    p calculate
   end
 
   def calculate
@@ -15,5 +15,5 @@ class Puzzle1
   end
 end
 
-p Puzzle1.new(10)
-p Puzzle1.new(1000)
+Puzzle1.new(10)
+Puzzle1.new(1000)
