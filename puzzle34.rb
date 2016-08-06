@@ -16,12 +16,12 @@ class Puzzle34
 
   def curious(n)
     sum = 0
-    p digits = n.to_s.split("")
+    digits = n.to_s.split("")
     digits.each do |digit|
       sum += @factorials[digit.to_i]
       return false if sum > n
     end
-    sum == n
+    return sum == n
   end
 end
 
