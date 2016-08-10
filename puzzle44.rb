@@ -12,7 +12,6 @@ class Puzzle44
   def add_new_pentagon
     count = @pentagons.length
     @pentagons << @pentagons[-1] + count *3 + 1
-    p "#{@pentagons[-1]} length #{count}"
   end
 
   def check_new_pentagon
